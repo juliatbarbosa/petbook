@@ -60,172 +60,78 @@ header ul li a:hover { /*header ul li a:hover = hover utiliza-se quando passa o 
     color: #5fbbf0; /*cor da fonte*/
     transition: all ease 0.2s; /*tempo de transição ao colocar o mouse em cima*/
 }
-
-
-.banner { /*banner = começo da página inicial -> */
-    width: 100%; /*largura*/
-    height: calc(100vh - 76px); /*altura calculada = 100vh (100% da altura da janela de navegação) - 76px (altura do header)*/
+/* petbook market */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
 }
 
-.container-banner { /*existe para centralizar*/
-    width: 100%; /*largura*/
-    height: 100%; /*altura*/
-    max-width: 1196px; /*largura máxima*/
-    margin: 0 auto;  /*centralizando o elemento*/
-    display: flex; /* facilitar o posicionamento dos elementos*/
-    align-items: center; /*centralizar verticalmente*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-.banner-img {
-    display: flex; /* facilitar o posicionamento dos elementos*/
-    justify-content: center; /*alinhar horizontalmente*/
-    margin-right: 100px; /*margem do lado direito*/
+h1 {
+    margin: 0;
 }
 
-.banner-img img { /*alteração imagem do banner*/
-    width: 450px; /*largura*/
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/******** Falar sobre: margin e padding**********/
-
-.banner-content h1 { /*conteúdo do banner - título*/
-    color: white; /*cor da fonte*/
-    font-size: 36px; /*tamanho da fonte*/
-    text-transform: uppercase; /* transformar em letras maiúsculas*/
-    margin-bottom: 24px; /*margem do lado debaixo*/
-    text-align: right; /*texto do lado direito*/
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
 }
 
-.banner-content p { /*conteúdo do banner - parárafo*/
-    font-size: 22px; /*tamanho da fonte*/
-    margin-bottom: 32px; /*margem do lado de baixo*/
-    text-align: right; /*texto do lado direito da página*/
+.product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.banner-links { /*botão do banner que vai para a página de Como Ajudar*/
-    display: flex; /* facilitar o posicionamento dos elementos*/
-    justify-content: end; /*alinhar horizontalmente*/
-    align-items: center; /*centralizado verticalmente*/
-    gap: 48px; /*espaçamento entre os elementos*/
+.product img {
+    width: 100%;
+    height: 70%;
 }
 
-/******** Falar sobre: border e border radius**********/
-
-.banner-links a { /*alteração no botão do banner que vai para a página de Como Ajudar*/
-    background-color: transparent; /*cor de fundo do link/botão*/
-    font-size: 19px; /*tamanho da fonte*/
-    font-weight: bold; /*negrito*/
-    color: white; /*cor da fonte*/
-    text-decoration: none; /*retirar o sublinhado do link*/
-    text-transform: uppercase; /*transformar em letras maiúsculas*/
-    border: 2px solid white; /*borda inteira*/
-    border-radius: 8px; /*arredondamento da borda*/
-    padding: 8px 24px; /*Espaçamento interno, sendo 8px em cima e embaixo e 24px nas laterais*/
+.product h2 {
+    margin-top: 0;
+    font-size: 20px;
 }
 
-.banner-links a:hover { /*hover altera o botão banner ao passar o mouse por cima*/
-    background-color: white; /*cor de fundo do link/botão*/
-    color: #5fbbf0; /*cor da fonte*/
-    border: 2px solid white; /*borda inteira*/
-    transition: all ease 0.2s; /*tempo de transição ao colocar o mouse em cima*/
+.product p {
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-
-.video { /* parte onde está o vídeo e o resumo*/
-    width: 100%; /*largura*/
-    background-color: white; /*cor de fundo*/
-    padding: 80px 0; /*Espaçamento interno, sendo 80px em cima e embaixo e 0 nas laterais*/
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.container-video { /*existe para centralizar*/
-    width: 100%; /*largura*/
-    max-width: 1196px; /*largura máxima*/
-    margin: 0 auto; /*centralizando o elemento*/
-    display: flex; /* facilitar o posicionamento dos elementos*/
-    justify-content: center;/*alinhar horizontalmente*/
-    gap: 48px; /*espaçamento entre os elementos*/
+.product button:hover {
+    background-color: #555;
 }
 
-.container-video video {/*alterações no vídeo*/
-    width: 500px; /*largura*/
-}
-
-.resume-video p { /*parágrafo de resumo*/
-    margin-top: 24px; /*margem do lado de cima*/
-    font-size: 18px; /*tamanho da fonte*/
-}
-
-
-.QuemSomos { /*parte que está tudo do Quem Somos*/
-    padding: 80px 0; /*Espaçamento interno, sendo 80px em cima e embaixo e 0 nas laterais*/
-}
-
-.container-QuemSomos { /*existe para centralizar*/
-    width: 100%; /*largura*/
-    max-width: 1196px; /*largura máxima*/
-    margin: 0 auto; /*centralizando o elemento*/
-}
-
-.container-QuemSomos p { /*parágrafo de Quem Somos*/
-    font-size: 18px; /*tamanho da fonte*/
-    margin-top: 24px; /*margem do lado de cima*/
-    margin-bottom: 24px; /*margem do lado debaixo*/
-}
-
-.cards { /* todos os cards de Nossos Pilares*/
-    display: flex; /* facilitar o posicionamento dos elementos*/
-    justify-content: space-between; /*alinhar horizontalmente*/
-    gap: 48px;/*espaçamento entre os elementos*/
-    padding: 32px 0;  /*Espaçamento interno, sendo 32px em cima e embaixo e 0 nas laterais*/
-}
-
-.card { /*título e imagem de cada card*/
-    display: flex; /* facilitar o posicionamento dos elementos*/
-    align-items: center; /*centralizado verticalmente*/
-    padding: 16px 48px; /*espaçamento no conteúdo, sendo 16px em cima e embaixo e 48px nas laterais*/
-    gap: 16px;/*espaçamento entre os elementos*/
-    border: 2px solid black; /*borda inteira*/
-    border-radius: 6px; /*arredondamento da borda*/
-}
-
-
-.projetos { /*parte inteira do Nossos Projetos*/
-    padding: 80px 0; /*espaçamento no conteúdo, sendo 80px em cima e embaixo e 0 nas laterais*/
-    background-color: white; /*cor de fundo*/
-}
-
-.container-projetos { /*existe para centralizar*/
-    width: 100%; /*largura*/
-    max-width: 1196px; /*largura máxima*/
-    margin: 0 auto; /*centralizando o elemento*/
-}
-
-.container-projetos h2 { /*título dos projetos*/
-    margin-bottom: 24px; /*margem na parte debaixo do título*/
-}
-
-.projeto-card img { /*imagens que estão nos projetos*/
-    width: 250px; /*largura*/
-    height: 160px; /*altura*/
-    border-radius: 6px; /*arredondamento da borda*/
-}
-
-.projeto-card {/*possui o título, o parágrafo e as imagens*/
-    display: flex; /* facilitar o posicionamento dos elementos*/
-    justify-content: center; /*alinhar horizontalmente*/
-    gap: 16px; /*espaçamento entre os elementos*/
-    margin-bottom: 32px; /*margem do lado debaixo*/
-    padding: 12px 12px 24px 12px; /*espaçamento das laterais do conteúdo, sendo respectivamente cima, direita, baixo, esquerda*/
-    border-bottom: 1px solid #818181; /*borda inteira*/
-}
-
-.card-content p { /*parágrafo dos cards*/
-    padding: 8px 0; /*espaçamento no conteúdo, sendo 8px em cima e embaixo e 0 nas laterais*/
-}
-
-/*
-Footer - Rodapé
-*/
+/*Footer - Rodapé*/
 
 .container-footer { /*existe para centralizar*/
     width: 100%; /*largura*/
