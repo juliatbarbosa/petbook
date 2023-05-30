@@ -88,6 +88,7 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
     flex-basis: calc(33.33% - 20px);
+    height: 550px;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -103,13 +104,20 @@ h1 {
 }
 
 .product h2 {
+    height: 30px;
     margin: 10px;
     font-size: 20px;
 }
 
 .product p {
+    text-align: justify;
+    height: 50px;
     margin: 10px;
     font-size: 16px;
+}
+
+.preco{
+    display: flex;
 }
 
 .product button {
@@ -119,7 +127,9 @@ h1 {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin: 10px;
+    bottom:20px;
+    left: 10px;
+    position: relative;
 }
 
 .product button:hover {
