@@ -11,17 +11,14 @@
 /******** Falar sobre: body - cor de fundo e font-family **********/
 
 body { /*corpo = conteúdo*/
-    background-color: #5fbbf0; /* cor de fundo */
+    background-color: white; /* cor de fundo */
     font-family: 'Roboto', sans-serif; /*fonte para tudo que está no body*/
 }
 
-
-header { /*cabeçalho*/
-    height: 76px; /*altura*/
-    background-color: white; /*cor de fundo*/
+header {
+    background-color: #27A8AD;
+    height: 76px;
 }
-
-/******** Falar sobre: como deixar centralizado e com largura máxima **********/
 
 .container-header {
     width: 100%; /*largura*/
@@ -30,13 +27,17 @@ header { /*cabeçalho*/
     margin: 0 auto; /*centralizando o elemento*/
 }
 
-/******** Falar sobre: display-flex / justify-content / align-items / gap**********/
-
 .content-header {
     height: 100%; /*altura*/
     display: flex; /* facilitar o posicionamento dos elementos*/
     justify-content: space-between; /*alinhar horizontalmente*/
     align-items: center; /*centralizar verticalmente*/
+    
+}
+
+.content-header img{
+    width: 150px;
+    height: 60px;
 }
 
 header ul {
@@ -46,18 +47,16 @@ header ul {
     gap: 24px; /*espaçamento entre os elementos*/
 }
 
-/******** Falar sobre: as fontes **********/
-
 header ul li a { /* header ul li a =  alteração dos links que estão nas listas do cabeçalho*/
     text-decoration: none; /*retirar o sublinhado do link*/
-    color: black; /*cor da fonte*/
+    color: white; /*cor da fonte*/
     font-size: 18px; /*tamanho da fonte*/
 }
 
 /******** Falar sobre: hover e transição**********/
 
 header ul li a:hover { /*header ul li a:hover = hover utiliza-se quando passa o mouse em cima, ou seja, quando passar as alterações abaixo serão feitas*/
-    color: #5fbbf0; /*cor da fonte*/
+    color: black; /*cor da fonte*/
     transition: all ease 0.2s; /*tempo de transição ao colocar o mouse em cima*/
 }
 /* petbook market */
@@ -66,13 +65,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f3f3f3;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
 }
 
 h1 {
