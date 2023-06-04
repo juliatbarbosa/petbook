@@ -7,13 +7,17 @@
     overflow-x: hidden; 
 }
 
+:root{
+    --corPrimaria: #27A8AD;
+}
+
 body { 
     background-color: white;
     font-family: 'Roboto', sans-serif;
 }
 
 header {
-    background-color: #27A8AD;
+    background-color: var(--corPrimaria);
     height: 76px;
 }
 
@@ -49,14 +53,10 @@ header ul li a {
     font-size: 18px; 
 }
 
-header ul li a:hover {
-    color: yellow; 
-    transition: all ease 0.2s;
-}
-
 .menuAtivo {
-    color: yellow;
-    font-weight: bold;
+    background-color: #47bfc4;
+    border-radius: 10px;
+    width: 100%;
 }
 
 body {
@@ -70,6 +70,7 @@ h1 {
     margin: 0;
 }
 
+/********** MarketPlace *********/
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -120,7 +121,8 @@ h1 {
 }
 
 .product button {
-    background-color: #333;
+    box-shadow: 2px 2px 5px gray;
+    background-color: var(--corPrimaria);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -132,10 +134,10 @@ h1 {
 }
 
 .product button:hover {
-    background-color: #555;
+    background-color: #27a8ad85 ;
 }
 
-/********** Início *********/
+/********** Index *********/
 #bodyBanner{
     display: flex;
     height: 100vh;
@@ -190,16 +192,143 @@ h1 {
  }
 
  .conteudo input:hover{
-    border-color: rgb(0, 0, 0);
+    background-color: #27a8adc9;
  }
+
+/********** Feed *********/
+
+.hrFeed{
+    width: 90%;
+    position: sticky;
+    left: 10px;
+}
+
+#headerFeed{
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+}
+
+#headerFeed ul {
+    align-items: baseline;
+    justify-content: center;
+    height: 70vh;
+    width: 15vw;
+    display: grid; 
+}
+
+#headerFeed a:hover {
+    background-color: #47bfc4;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#headerFeed ul li a { 
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    font-size: 20px; 
+    font-weight: normal;
+}
+
+#headerFeed li{
+    display: flex;
+}
+
+#headerFeed li img{
+    width: 32px;
+    height: 32px;
+}
+
+#container-headerFeed {
+    justify-content: center;
+    margin: auto;
+    height: 100vh; 
+}
+
+#content-headerFeed {
+    height: 100%;
+    display: grid;
+    align-items: center; 
+}
+
+#content-headerFeed .imgLogo{
+    top:20px;
+    left: 20px;
+    position: fixed;
+}
+
+.linhaStories {
+    justify-content: center;
+    padding: 20px 0px;
+    display: flex;
+    height: 140px;
+}
+
+.linhaStories .conteudoStories {
+    width: 80px;
+    margin: 0px 20px;
+}
+
+.linhaStories .conteudoStories img {
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.linhaStories .conteudoStories .semVisualizacao {
+    border: 4px #27A8AD solid;
+}
+
+.linhaStories .conteudoStories .nomeStories {
+    cursor: pointer;
+    text-align: center;
+    font-size: small;
+}
+
+.postagem{ 
+    background-color: white;
+    width: 60%;
+    max-height: 600px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.postagem .usuarioPostagem{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+.postagem .usuarioPostagem img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.postagem .usuarioPostagem span{
+    color: lightgray;
+    margin-left: 5px;
+    font-size: smaller;
+}
+
+.postagem .imagemPostagem img{
+    width: 100%;
+}
 
 /*Footer - Rodapé*/
 
-.container-footer { /*existe para centralizar*/
-    width: 100%; /*largura*/
-    max-width: 1196px; /*largura máxima*/
-    margin: 0 auto; /*centralizando o elemento*/
-    padding: 24px; /*espaçamento no conteúdo, sendo 24px em todos os lados*/
+.container-footer { 
+    margin: 0 auto;
+    padding: 24px;
+    right: 20px;
+    position: absolute;
+    width:80vw;
+    justify-content: center;
 }
 
 .container-footer ul { /*alterar a direção da lista */
