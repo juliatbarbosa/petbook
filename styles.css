@@ -295,6 +295,31 @@ h1 {
     width: 100%;
 }
 
+
+/* Perfil */
+
+.container-perfil {
+    width: calc(100vw - 15vw);
+    margin-right: 15vw;
+    
+}
+
+.topo-esquerda{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*Footer - Rodapé*/
 
 .container-footer { 
