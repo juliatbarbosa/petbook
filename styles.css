@@ -34,7 +34,6 @@ header {
     height: 100%;
     display: grid;
     align-items: center; 
-    height: 100%;
     justify-content: space-between;  
 }
 
@@ -90,6 +89,12 @@ header ul li a {
     background-color: #47bfc4;
     border-radius: 10px;
     width: 100%;
+}
+
+.geral{
+    margin-left: 25vw;
+    width: 70vw;
+    display: grid;
 }
 
 body {
@@ -232,6 +237,8 @@ h1 {
     background-color: #27a8adc9;
  }
 
+
+
 /********** Feed *********/
 
 .linhaStories {
@@ -265,8 +272,7 @@ h1 {
 
 .postagem{ 
     background-color: white;
-    width: 60%;
-    max-height: 600px;
+    width: 80%;
     border-radius: 20px;
     margin: 0 auto;
 }
@@ -295,6 +301,15 @@ h1 {
     width: 100%;
 }
 
+.chat {
+    background-color: black;
+    width: 20vw;
+    height: 60vh;
+    border-radius: 10px 0 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+ }
 /*Footer - Rodapé*/
 
 .container-footer { 
