@@ -11,28 +11,43 @@
     --corPrimaria: #27A8AD;
 }
 
-body { 
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
+.hrFeed{
+    width: 90%;
+    position: sticky;
+    left: 10px;
 }
 
 header {
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
     background-color: var(--corPrimaria);
-    height: 76px;
 }
 
 .container-header {
-    width: 100%; 
-    height: 76px; 
-    max-width: 1196px; 
-    margin: 0 auto;
+    justify-content: center;
+    margin: auto;
+    height: 100vh; 
 }
 
 .content-header {
     height: 100%;
-    display: flex;
-    justify-content: space-between; 
+    display: grid;
     align-items: center; 
+    height: 100%;
+    justify-content: space-between;  
+}
+
+.content-header .imgLogo{
+    top:20px;
+    left: 20px;
+    position: fixed;
+}
+
+.header a:hover {
+    background-color: #47bfc4;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .content-header img{
@@ -42,15 +57,33 @@ header {
 
 header ul {
     list-style: none;
-    display: flex; 
-    justify-content: center;
     gap: 24px;
+    align-items: baseline;
+    justify-content: center;
+    height: 70vh;
+    width: 15vw;
+    display: grid; 
+}
+
+.header li{
+    display: flex;
 }
 
 header ul li a { 
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    font-size: 20px; 
+    font-weight: normal;
     text-decoration: none;
     color: white; 
     font-size: 18px; 
+}
+
+.header li img{
+    width: 32px;
+    height: 32px;
 }
 
 .menuAtivo {
@@ -60,7 +93,7 @@ header ul li a {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f3f3f3;
@@ -173,6 +206,10 @@ h1 {
     left: 10px;
 }
 
+.conteudo .imglogos:hover{
+    opacity: 0.7;
+}
+
 .inicio .conteudo .texto{
     font-size: x-large;
     color: #000000;
@@ -196,68 +233,6 @@ h1 {
  }
 
 /********** Feed *********/
-
-.hrFeed{
-    width: 90%;
-    position: sticky;
-    left: 10px;
-}
-
-#headerFeed{
-    height: 100vh;
-    width: 15vw;
-    position: fixed;
-}
-
-#headerFeed ul {
-    align-items: baseline;
-    justify-content: center;
-    height: 70vh;
-    width: 15vw;
-    display: grid; 
-}
-
-#headerFeed a:hover {
-    background-color: #47bfc4;
-    border-radius: 10px;
-    width: 100%;
-}
-
-#headerFeed ul li a { 
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    gap: 15px;
-    font-size: 20px; 
-    font-weight: normal;
-}
-
-#headerFeed li{
-    display: flex;
-}
-
-#headerFeed li img{
-    width: 32px;
-    height: 32px;
-}
-
-#container-headerFeed {
-    justify-content: center;
-    margin: auto;
-    height: 100vh; 
-}
-
-#content-headerFeed {
-    height: 100%;
-    display: grid;
-    align-items: center; 
-}
-
-#content-headerFeed .imgLogo{
-    top:20px;
-    left: 20px;
-    position: fixed;
-}
 
 .linhaStories {
     justify-content: center;
