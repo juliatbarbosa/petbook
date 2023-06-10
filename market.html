@@ -1,143 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace</title>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marketplace</title>
+        <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<body>
-    <header class="header">
-        <div class="container-header">
-            <div class="content-header">
-                <a href="index.html">
-                    <img class="imgLogo" src="assets/logo-nome.png" alt="Logotipo">
-                </a>
-                <hr class="hrFeed">
-                <nav>
+    <body>
+        <div class="cabecalho">
+            <a href="#"><img src="assets/carrinho-de-compras.png" alt="Market"></a>
+            <a href="perfil.html"><img id="img-cabecalho" src="assets/perfil.jpg" alt=" Post"></a>
+        </div>
+        <header class="header">
+            <div class="container-header">
+                <div class="content-header">
+                    <a href="index.html">
+                        <img class="imgLogo" src="assets/logo-nome.png" alt="Logotipo">
+                    </a>
+                    <hr class="hrFeed">
+                    <nav>
+                        <ul>
+                            <li><a  href="inicio.html"><img src="assets/pagina-inicial.png" alt="Inicio">Inicío</a></li>
+                            <li><a href="perfil.html"><img src="assets/perfil.png" alt="Perfil">Perfil</a></li>
+                            <li><a class="menuAtivo" href="#"><img src="assets/marketplace.png" alt="Market">Marketplace</a></li>
+                            <li><a href="perfil.html"><img src="assets/amigos.png" alt="Amigos">Amigos</a></li>
+                            <li><a href="Adoção.html"><img src="assets/adocao.png" alt="Adoção">Adoção</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="geral">
+            <div class="container">
+                <div class="product">
+                    <img src="assets/coleira_amarela.jpg" alt="Coleira para Cachorro">
+                    <h2>Coleira para Cachorro</h2>
+                    <p>Estilo, conforto e segurança para passeios incríveis com seu cão</p>
+                    <p><b>Preço:</b> R$49,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="assets/coleira_vermelha.jpg" alt="Guia para Cães">
+                    <h2>Guia Unificada</h2>
+                    <p>Conveniência e controle em um único acessório</p>
+                    <p><b>Preço:</b> R$59,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="assets/caminha.jpg" alt="Cama de Cachorro">
+                    <h2>Cama para Cães</h2>
+                    <p>Aconchego e conforto garantidos para o sono do seu melhor amigo</p>
+                    <p><b>Preço:</b> R$69,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="assets/pote_racao.jpg" alt="Pote de Ração">
+                    <h2>Pote de Ração</h2>
+                    <p>Organização e praticidade para alimentar seu pet</p>
+                    <p><b>Preço:</b> R$29,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="assets/brinquedo_gato.jpg" alt="Brinquedo">
+                    <h2>Brinquedo de Gato</h2>
+                    <p>Divertimento garantidos para a diversão</p>
+                    <p><b>Preço:</b> R$199,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="assets/areia_gato.jpg" alt="Areia de gato">
+                    <h2>Areia de Gato</h2>
+                    <p>Higiene impecável para o ambiente do seu gato</p>
+                    <p><b>Preço:</b> R$19,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="assets/bola_la.jpg" alt="Bola de Lã">
+                    <h2>Bola de Lã</h2>
+                    <p>Horas de diversão e exercício com a bola de lã</p>
+                    <p><b>Preço:</b> R$9,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="assets/puleiro.jpg" alt="Puleiro">
+                    <h2>Puleiro</h2>
+                    <p>Um refúgio perfeito para seu pássaro, com conforto e segurança</p>
+                    <p>Preço: R$9,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="assets/cesta.jpg" alt="Cesta de Coelho">
+                    <h2>Cesta para Coelhos</h2>
+                    <p>Aconchego e conforto para o seu coelho em uma cesta encantadora</p>
+                    <p><b>Preço:</b>
+                    R$39,90</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-footer">
+                <div class="ano">
+                    <p>Libertas - Faculdades Integradas | Desenvolvimento Web | 2023</p>
+                </div>
+                <div class="lista-alunos">
                     <ul>
-                        <li><a  href="inicio.html"><img src="assets/pagina-inicial.png" alt="Inicio">Inicío</a></li>
-                        <li><a href="perfil.html"><img src="assets/perfil.png" alt="Perfil">Perfil</a></li>
-                        <li><a class="menuAtivo" href="#"><img src="assets/carrinho-de-compras.png" alt="Market">Marketplace</a></li>
-                        <li><a href="perfil.html"><img src="assets/amigos.png" alt="Amigos">Amigos</a></li>
-                        <li><a href="Adoção.html"><img src="assets/adocao.png" alt="Adoção">Adoção</a></li>
+                        <li>
+                            <img src="assets/o-email.png" alt="">
+                            <div class="footer-info">
+                                <p>Júlia Teixeira Barbosa</p>
+                                <a href="">dev.juliabarbosa@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/o-email.png" alt="">
+                            <div class="footer-info">
+                                <p>Leonardo Prodossimo</p>
+                                <a href="">leohp14@hotmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/o-email.png" alt="">
+                            <div class="footer-info">
+                                <p>Tulio Barros</p>
+                                <a href="">tuliobarros830@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/o-email.png" alt="">
+                            <div class="footer-info">
+                                <p>Ironaldo Silva</p>
+                                <a href="">iro.silva@hotmail.com</a>
+                            </div>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div class="geral">
-        <div class="container">
-            <div class="product">
-                <img src="assets/coleira_amarela.jpg" alt="Coleira para Cachorro">
-                <h2>Coleira para Cachorro</h2>
-                <p>Estilo, conforto e segurança para passeios incríveis com seu cão</p>
-                <p><b>Preço:</b> R$49,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product">
-                <img src="assets/coleira_vermelha.jpg" alt="Guia para Cães">
-                <h2>Guia Unificada</h2>
-                <p>Conveniência e controle em um único acessório para passeios perfeitos</p>
-                <p><b>Preço:</b> R$59,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product">
-                <img src="assets/caminha.jpg" alt="Cama de Cachorro">
-                <h2>Cama para Cães</h2>
-                <p>Aconchego e conforto garantidos para o sono do seu melhor amigo</p>
-                <p><b>Preço:</b> R$69,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product">
-                <img src="assets/pote_racao.jpg" alt="Pote de Ração">
-                <h2>Pote de Ração</h2>
-                <p>Organização e praticidade para alimentar seu pet com cuidado e facilidade</p>
-                <p><b>Preço:</b> R$29,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product">
-                <img src="assets/brinquedo_gato.jpg" alt="Brinquedo">
-                <h2>Brinquedo de Gato</h2>
-                <p>Divertimento e estimulação garantidos para a diversão felina sem limites</p>
-                <p><b>Preço:</b> R$199,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product">
-                <img src="assets/areia_gato.jpg" alt="Areia de gato">
-                <h2>Areia de Gato</h2>
-                <p>Higiene impecável e frescor duradouro para o ambiente do seu gato</p>
-                <p><b>Preço:</b> R$19,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product">
-                <img src="assets/bola_la.jpg" alt="Bola de Lã">
-                <h2>Bola de Lã</h2>
-                <p>Horas de diversão e exercício com a bola de lã</p>
-                <p><b>Preço:</b> R$9,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product">
-                <img src="assets/puleiro.jpg" alt="Puleiro">
-                <h2>Puleiro</h2>
-                <p>Um refúgio perfeito para seu pássaro, com conforto e segurança</p>
-                <p>Preço: R$9,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="product">
-                <img src="assets/cesta.jpg" alt="Cesta de Coelho">
-                <h2>Cesta para Coelhos</h2>
-                <p>Aconchego e conforto para o seu coelho em uma cesta encantadora</p>
-                <p><b>Preço:</b>
-                 R$39,90</p>
-                <button>Comprar</button>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="container-footer">
-            <div class="ano">
-                <p>Libertas - Faculdades Integradas | Desenvolvimento Web | 2023</p>
-            </div>
-            <div class="lista-alunos">
-                <ul>
-                    <li>
-                        <img src="assets/o-email.png" alt="">
-                        <div class="footer-info">
-                            <p>Júlia Teixeira Barbosa</p>
-                            <a href="">dev.juliabarbosa@gmail.com</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="assets/o-email.png" alt="">
-                        <div class="footer-info">
-                            <p>Leonardo Prodossimo</p>
-                            <a href="">leohp14@hotmail.com</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="assets/o-email.png" alt="">
-                        <div class="footer-info">
-                            <p>Tulio Barros</p>
-                            <a href="">tuliobarros830@gmail.com</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="assets/o-email.png" alt="">
-                        <div class="footer-info">
-                            <p>Ironaldo Silva</p>
-                            <a href="">iro.silva@hotmail.com</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                </div>
 
-        </div>
-    </footer>
-</body>
+            </div>
+        </footer>
+    </body>
 
 </html>
