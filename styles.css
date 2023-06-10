@@ -389,6 +389,12 @@ h1 {
     font-size: smaller;
 }
 
+#pesquisar{
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
 #online img{
     border: 3px solid rgb(39, 230, 39);
 }
@@ -423,6 +429,7 @@ h1 {
 
 .adiciona-grupo img{
     cursor: pointer;
+    height: 18px;
 }
 
 .chat::-webkit-scrollbar {
