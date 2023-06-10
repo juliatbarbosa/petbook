@@ -20,7 +20,7 @@
 header {
     height: 100vh;
     width: 15vw;
-    position: fixed;
+    position: absolute;
     background-color: var(--corPrimaria);
 }
 
@@ -92,12 +92,13 @@ header ul li a {
 }
 
 .geral{
-    margin-left: 25vw;
     width: 70vw;
     display: grid;
 }
 
 body {
+    display: grid;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -272,7 +273,7 @@ h1 {
 
 .postagem{ 
     background-color: white;
-    width: 80%;
+    width: 60%;
     border-radius: 20px;
     margin: 0 auto;
 }
@@ -301,7 +302,15 @@ h1 {
     width: 100%;
 }
 
-
+.chat {
+    background-color: black;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 10px 0 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+ }
 /* Perfil */
 
 .container-perfil {
@@ -318,23 +327,6 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-.chat {
-    background-color: black;
-    width: 20vw;
-    height: 60vh;
-    border-radius: 10px 0 0 0;
-    position: fixed;
-    bottom: 0;
-    right: 0;
- }
 /*Footer - Rodapé*/
 
 .container-footer { 
