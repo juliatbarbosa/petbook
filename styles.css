@@ -93,6 +93,12 @@ header ul li a {
 }
 
 .geral{
+    justify-content: right;
+    width: 80vw;
+    display: grid;
+}
+
+.geralFeed{
     width: 70vw;
     display: grid;
 }
