@@ -330,7 +330,7 @@ h1 {
     background-color: white;
     width: 60%;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .postagem .usuarioPostagem{
@@ -355,6 +355,52 @@ h1 {
 
 .postagem .imagemPostagem img{
     width: 100%;
+    height: 70%;
+}
+
+.postagem .icones{
+    margin: 10px 0 0 10px;
+    display: flex;
+}
+
+.postagem .icones .like{
+    display: flex;
+    width: 94%;
+    gap: 15px;
+}
+
+.postagem .icones img{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.postagem .comentarios{
+    display: grid;
+    margin: 10px;
+}
+
+.postagem .comentarios .comentario-input{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+
+.postagem .comentarios .comentario-input img{
+    width: 24px;
+    height: 24px;
+}
+
+.postagem .comentarios .comentario-input input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.363);
+    background-color: #dfdbdb80;
 }
 
 .chat {
