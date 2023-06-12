@@ -583,7 +583,6 @@ h1 {
 /* ############################################################################### */
 /* Amigos */
 .amigos {
-    cursor: pointer;
     width: 85vw;
     margin-left: 15vw;
     margin-top: 8vh;
@@ -600,6 +599,7 @@ h1 {
 }
 
 .input-amigos input {
+    cursor: pointer;
     width: 100%;
     padding: 12px;
     border-radius: 8px;
@@ -611,12 +611,14 @@ h1 {
 }
 
 .amigos h1 {
+    cursor: pointer;
     width: 900px;
     font-size: 26px;
     margin-bottom: 24px;
 }
 
 .amigos img {
+    cursor: pointer;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -639,15 +641,18 @@ h1 {
 }
 
 .amigos-nome h4 {
+    cursor: pointer;
     font-size: 18px;
 }
 
 .amigos-nome p {
+    cursor: pointer;
     font-size: 14px;
     color: #8d8989;
 }
 
 .amigos li a {
+    cursor: pointer;
     width: 90px;
     height: 36px;
     font-size: 14px;
