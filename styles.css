@@ -254,6 +254,7 @@ h1 {
 
 .inicio .conteudo img{
     margin-bottom: 20px;
+    width: 350px;
 }
 
 .conteudo .imglogos{
@@ -409,6 +410,7 @@ h1 {
     border-radius: 10px;
     box-shadow: 1px 2px 3px rgba(128, 128, 128, 0.295);
     background-color: #dfdbdb80;
+    padding-left: 12px;
 }
 
 .chat {
@@ -502,17 +504,78 @@ h1 {
 
 /* Perfil */
 
+.perfil {
+    width: 85vw;
+    margin-left: 15vw;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.foto-perfil img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 150px;
+    border: 6px solid #27A8AD;
+}
+
 .container-perfil {
-    width: calc(100vw - 15vw);
-    margin-right: 15vw;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+}
+
+.dados-perfil {
+    text-align: center;
+}
+
+.dados-perfil span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dados-perfil p {
+    font-size: 22px;
+}
+
+.descricao-perfil {
+    width: 900px;
+    margin-top: 32px;
+}
+
+.descricao-perfil p {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.publicacoes-fotos {
+    width: 900px;
     
 }
 
-.topo-esquerda{
-    color: #000000;
-    display: flex;
-    justify-content: center;
+.publicacoes-fotos h1 {
+    font-size: 24px;
+    margin: 32px 0 24px 0;
 }
+
+.fotos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 100px;
+}
+
+.fotos img {
+    width: 33%;
+    height: 200px;
+}
+
 
 /*Footer*/
 
