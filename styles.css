@@ -257,7 +257,7 @@ h1 {
     width: 350px;
 }
 
-.conteudo #imglogos{
+.inicio .conteudo #imglogos{
     cursor: pointer;
     width: 12vw;
     height: 20vh;
