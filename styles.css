@@ -515,19 +515,18 @@ h1 {
 }
 
 .foto-perfil img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-right: 150px;
+    margin-right: 50px;
     border: 6px solid #27A8AD;
 }
 
 .container-perfil {
     width: 900px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 72px;
+    gap: 20px;
 }
 
 .dados-perfil {
@@ -576,6 +575,110 @@ h1 {
     height: 200px;
 }
 
+.container-perfil a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Amigos */
+.amigos {
+    width: 85vw;
+    margin-left: 15vw;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    margin-bottom: 100px;
+}
+
+.input-amigos{
+    width: 100%;
+    max-width: 900px;
+}
+
+.input-amigos input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ccc;
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.amigos h1 {
+    width: 900px;
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.amigos img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #27A8AD;
+}
+
+.amigos ul {
+    width: 900px;
+}
+
+.amigos li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.amigos-nome {
+    flex: 1;
+}
+
+.amigos-nome h4 {
+    font-size: 18px;
+}
+
+.amigos-nome p {
+    font-size: 14px;
+    color: #8d8989;
+}
+
+.amigos li a {
+    width: 90px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ccc;
+    border-radius: 6px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amigos li a:hover {
+    opacity: 0.7;
+}
+
+
+.amigos hr {
+    max-width: 900px;
+    margin: 12px 0 32px 0;
+}
+
+.amigos .sugestoes {
+    color: white;
+    background-color: #27A8AD;
+}
+
+.amigos .sugestoes:hover {
+    background-color: #47bfc4;
+}
+
+
 
 /*Footer*/
 
@@ -603,7 +706,7 @@ h1 {
 }
 
 .footer-info a:hover { 
-    color: white;
+    color: #27A8AD;
     transition: all ease 0.2s;
 }
 
