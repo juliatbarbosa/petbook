@@ -641,12 +641,12 @@ h1 {
 }
 
 .amigos-nome h4 {
+    width: 200px;
     cursor: pointer;
     font-size: 18px;
 }
 
 .amigos-nome p {
-    cursor: pointer;
     font-size: 14px;
     color: #8d8989;
 }
