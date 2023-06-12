@@ -249,7 +249,7 @@ h1 {
 }
 
 .inicio .conteudo{
-    width: 25%;
+    width: 27%;
 }
 
 .inicio .conteudo img{
@@ -257,8 +257,9 @@ h1 {
     width: 350px;
 }
 
-.conteudo .imglogos{
+.conteudo #imglogos{
     cursor: pointer;
+    width: 12vw;
     height: 20vh;
     position: absolute;
     bottom: 10px;
